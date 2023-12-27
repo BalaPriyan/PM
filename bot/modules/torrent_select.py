@@ -1,6 +1,6 @@
 from contextlib import suppress
 from pyrogram.handlers import MessageHandler, CallbackQueryHandler
-from pyrogram.filters import regex
+from pyrogram.filters import regex,private
 from aiofiles.os import remove as aioremove, path as aiopath
 
 from bot import bot, bot_name, aria2, download_dict, download_dict_lock, OWNER_ID, user_data, LOGGER

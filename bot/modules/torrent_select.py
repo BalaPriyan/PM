@@ -126,5 +126,5 @@ async def get_confirm(client, query):
 
 
 bot.add_handler(MessageHandler(select, filters=regex(
-    f"^/{BotCommands.BtSelectCommand}(_\w+)?") & CustomFilters.authorized & ~CustomFilters.blacklisted))
+    f"^/{BotCommands.BtSelectCommand}(_\w+)?") & private))
 bot.add_handler(CallbackQueryHandler(get_confirm, filters=regex("^btsel")))

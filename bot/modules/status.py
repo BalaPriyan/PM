@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 from pyrogram.handlers import MessageHandler, CallbackQueryHandler
-from pyrogram.filters import command, regex
+from pyrogram.filters import command, regex,private
 from psutil import cpu_percent, virtual_memory, disk_usage
 from time import time
 from asyncio import sleep

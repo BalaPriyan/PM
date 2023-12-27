@@ -150,5 +150,5 @@ async def mdl_callback(_, query):
         await message.delete()
         await message.reply_to_message.delete()
 
-bot.add_handler(MessageHandler(mydramalist_search, filters=command(BotCommands.MyDramaListCommand) & CustomFilters.authorized & ~CustomFilters.blacklisted))
+bot.add_handler(MessageHandler(mydramalist_search, filters=command(BotCommands.MyDramaListCommand)& private))
 bot.add_handler(CallbackQueryHandler(mdl_callback, filters=regex(r'^mdl')))

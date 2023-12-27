@@ -4,7 +4,7 @@ from requests import get as rget
 from urllib.parse import quote as q
 from pycountry import countries as conn
 
-from pyrogram.filters import command, regex
+from pyrogram.filters import command, regex,private
 from pyrogram.handlers import MessageHandler, CallbackQueryHandler
 from pyrogram.errors import MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty, ReplyMarkupInvalid
 

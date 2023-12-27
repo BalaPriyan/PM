@@ -55,4 +55,4 @@ async def speedtest(_, message):
         await editMessage(speed, string_speed)
 
 bot.add_handler(MessageHandler(speedtest, filters=command(
-    BotCommands.SpeedCommand) & CustomFilters.authorized & ~CustomFilters.blacklisted))
+    BotCommands.SpeedCommand) & private))

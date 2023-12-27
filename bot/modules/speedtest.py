@@ -1,6 +1,6 @@
 from speedtest import Speedtest, ConfigRetrievalError
 from pyrogram.handlers import MessageHandler
-from pyrogram.filters import command
+from pyrogram.filters import command,private
 
 from bot import bot, LOGGER
 from bot.helper.telegram_helper.filters import CustomFilters
